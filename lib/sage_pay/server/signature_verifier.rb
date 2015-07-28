@@ -20,7 +20,7 @@ module SagePay
           @params["VendorTxCode"],
           @params["Status"],
           @params["TxAuthNo"],
-          @signature_verification_details.vendor,
+          @signature_verification_details.vendor.to_s.downcase,
           @params["AVSCV2"],
           @signature_verification_details.security_key,
           @params["AddressResult"],
@@ -32,7 +32,11 @@ module SagePay
           @params["AddressStatus"],
           @params["PayerStatus"],
           @params["CardType"],
-          @params["Last4Digits"]
+          @params["Last4Digits"],
+          @params["DeclineCode"],
+          @params["ExpiryDate"],
+          @params["FraudResponse"],
+          @params["BankAuthCode"],
         ]
       end
     end

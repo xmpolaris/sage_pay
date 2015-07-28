@@ -21,7 +21,11 @@ module SagePay
         "PayerStatus"    => :payer_status,
         "CardType"       => :card_type,
         "Last4Digits"    => :last_4_digits,
-        "VPSSignature"   => :vps_signature
+        "VPSSignature"   => :vps_signature,
+        'DeclineCode'    => :decline_code,
+        'ExpiryDate'     => :expiry_date,
+        'BankAuthCode'   => :bank_auth_code,
+        'FraudResponse'  => :fraud_response
       }.freeze
 
       class_attribute :match_converter, :instance_writer => false

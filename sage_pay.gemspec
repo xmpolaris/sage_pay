@@ -5,16 +5,16 @@ Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
   s.required_ruby_version = '>= 1.9.2'
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.rubygems_version = '1.3.6'
+  s.rubygems_version = '1.3.6.2'
 
   s.name              = 'sage_pay'
   s.version           = SagePay::VERSION
-  s.date              = '2012-07-21'
+  s.date              = '2015-07-28'
   s.rubyforge_project = 'sage_pay'
 
-  s.summary     = "Ruby implementation of the SagePay payment gateway protocol."
+  s.summary     = "Ruby implementation of the SagePay payment gateway protocol(v3)."
   s.description = <<-DESCRIPTION
-This is a Ruby library for integrating with SagePay. SagePay is a payment
+This is a Ruby library for integrating with SagePay v3. SagePay is a payment
 gateway for accepting credit card payments through your web app.
   DESCRIPTION
 
